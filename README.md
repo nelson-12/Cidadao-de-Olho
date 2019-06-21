@@ -20,3 +20,5 @@ Para a os deputados custo mensais  [URL_Padrão]/deputados/gastosDeputados/{ano_
 
 Para as Redes Sociais mais Utilizada [URL_Padrão]/deputados/midia
 
+O Projeto foi dividido de forma modular para que fique bem melhor organizado o codígo, para consumir a Api foi utilizado curl, para isso foi criado uma class Client de acesso global, caso outros modulos precisem consumir API's externas.
+Todas a validações são realizadas nos controller's que realizão a chamada para a class Client, que recebe o retorno da API, guarda as informações no banco de dados, caso essa informação já exista no banco o controller retorna o json.
